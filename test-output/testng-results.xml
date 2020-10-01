@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[Login To the App]]>
+    </line>
+    <line>
+      <![CDATA[Enter the value into User Name Text Box]]>
+    </line>
+    <line>
+      <![CDATA[Enter the value into Password Text Box]]>
+    </line>
+    <line>
+      <![CDATA[Verify Sign In Button is Clickable or Not]]>
+    </line>
+    <line>
+      <![CDATA[Verify Reports Tab is Clickable or Not]]>
+    </line>
+    <line>
+      <![CDATA[Verify Task Tab is Clickable or Not]]>
+    </line>
+    <line>
+      <![CDATA[Verify Create New Customer Button is Clickable or Not]]>
+    </line>
+    <line>
+      <![CDATA[Enter the value into Customer Name Text Box]]>
+    </line>
+    <line>
+      <![CDATA[-------------Scrolling till the Element------------]]>
+    </line>
+    <line>
+      <![CDATA[Verify Create Customer Button is Clickable or Not]]>
+    </line>
+    <line>
+      <![CDATA[Login To the App]]>
+    </line>
+    <line>
+      <![CDATA[Enter the value into User Name Text Box]]>
+    </line>
+    <line>
+      <![CDATA[Enter the value into Password Text Box]]>
+    </line>
+    <line>
+      <![CDATA[Verify Sign In Button is Clickable or Not]]>
+    </line>
+    <line>
+      <![CDATA[Verify Reports Tab is Clickable or Not]]>
+    </line>
+    <line>
+      <![CDATA[Verify Task Tab is Clickable or Not]]>
+    </line>
+    <line>
+      <![CDATA[Verify Create New Customer Button is Clickable or Not]]>
+    </line>
+    <line>
+      <![CDATA[Enter the value into Customer Name Text Box]]>
+    </line>
+    <line>
+      <![CDATA[-------------Scrolling till the Element------------]]>
+    </line>
+    <line>
+      <![CDATA[Verify Create Customer Button is Clickable or Not]]>
+    </line>
+    <line>
+      <![CDATA[Login To the App]]>
+    </line>
+    <line>
+      <![CDATA[Enter the value into User Name Text Box]]>
+    </line>
+    <line>
+      <![CDATA[Enter the value into Password Text Box]]>
+    </line>
+    <line>
+      <![CDATA[Verify Sign In Button is Clickable or Not]]>
+    </line>
+    <line>
+      <![CDATA[Verify Reports Tab is Clickable or Not]]>
+    </line>
+    <line>
+      <![CDATA[Verify Task Tab is Clickable or Not]]>
+    </line>
+    <line>
+      <![CDATA[Verify Create New Customer Button is Clickable or Not]]>
+    </line>
+    <line>
+      <![CDATA[Enter the value into Customer Name Text Box]]>
+    </line>
+    <line>
+      <![CDATA[-------------Scrolling till the Element------------]]>
+    </line>
+    <line>
+      <![CDATA[Verify Create Customer Button is Clickable or Not]]>
+    </line>
+  </reporter-output>
+  <suite name="Actitime" duration-ms="61987" started-at="2020-10-01T11:23:49Z" finished-at="2020-10-01T11:24:51Z">
+    <groups>
+    </groups>
+    <test name="POC_Test1" duration-ms="61987" started-at="2020-10-01T11:23:49Z" finished-at="2020-10-01T11:24:51Z">
+      <class name="com.tyss.acttime.scripts.CreateRequisition">
+        <test-method status="PASS" signature="createFiles()[pri:0, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="createFiles" is-config="true" duration-ms="472" started-at="2020-10-01T11:23:49Z" finished-at="2020-10-01T11:23:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createFiles -->
+        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="launchApp" is-config="true" duration-ms="13968" started-at="2020-10-01T11:23:49Z" finished-at="2020-10-01T11:24:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="setExtentReport(java.lang.reflect.Method)[pri:0, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="setExtentReport" is-config="true" duration-ms="9" started-at="2020-10-01T11:24:06Z" finished-at="2020-10-01T11:24:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tyss.acttime.scripts.CreateRequisition.createRequisition(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtentReport -->
+        <test-method status="PASS" signature="createRequisition(java.lang.String)[pri:2, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="createRequisition" duration-ms="17093" started-at="2020-10-01T11:24:06Z" description="Create Requisition" data-provider="TestDataProvider" finished-at="2020-10-01T11:24:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cust9088]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login To the App]]>
+            </line>
+            <line>
+              <![CDATA[Enter the value into User Name Text Box]]>
+            </line>
+            <line>
+              <![CDATA[Enter the value into Password Text Box]]>
+            </line>
+            <line>
+              <![CDATA[Verify Sign In Button is Clickable or Not]]>
+            </line>
+            <line>
+              <![CDATA[Verify Reports Tab is Clickable or Not]]>
+            </line>
+            <line>
+              <![CDATA[Verify Task Tab is Clickable or Not]]>
+            </line>
+            <line>
+              <![CDATA[Verify Create New Customer Button is Clickable or Not]]>
+            </line>
+            <line>
+              <![CDATA[Enter the value into Customer Name Text Box]]>
+            </line>
+            <line>
+              <![CDATA[-------------Scrolling till the Element------------]]>
+            </line>
+            <line>
+              <![CDATA[Verify Create Customer Button is Clickable or Not]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createRequisition -->
+        <test-method status="PASS" signature="setExtentReport(java.lang.reflect.Method)[pri:0, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="setExtentReport" is-config="true" duration-ms="1" started-at="2020-10-01T11:24:23Z" finished-at="2020-10-01T11:24:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tyss.acttime.scripts.CreateRequisition.createRequisition(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtentReport -->
+        <test-method status="PASS" signature="createRequisition(java.lang.String)[pri:2, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="createRequisition" duration-ms="13557" started-at="2020-10-01T11:24:23Z" description="Create Requisition" data-provider="TestDataProvider" finished-at="2020-10-01T11:24:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cust0865]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login To the App]]>
+            </line>
+            <line>
+              <![CDATA[Enter the value into User Name Text Box]]>
+            </line>
+            <line>
+              <![CDATA[Enter the value into Password Text Box]]>
+            </line>
+            <line>
+              <![CDATA[Verify Sign In Button is Clickable or Not]]>
+            </line>
+            <line>
+              <![CDATA[Verify Reports Tab is Clickable or Not]]>
+            </line>
+            <line>
+              <![CDATA[Verify Task Tab is Clickable or Not]]>
+            </line>
+            <line>
+              <![CDATA[Verify Create New Customer Button is Clickable or Not]]>
+            </line>
+            <line>
+              <![CDATA[Enter the value into Customer Name Text Box]]>
+            </line>
+            <line>
+              <![CDATA[-------------Scrolling till the Element------------]]>
+            </line>
+            <line>
+              <![CDATA[Verify Create Customer Button is Clickable or Not]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createRequisition -->
+        <test-method status="PASS" signature="setExtentReport(java.lang.reflect.Method)[pri:0, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="setExtentReport" is-config="true" duration-ms="1" started-at="2020-10-01T11:24:37Z" finished-at="2020-10-01T11:24:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tyss.acttime.scripts.CreateRequisition.createRequisition(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtentReport -->
+        <test-method status="PASS" signature="createRequisition(java.lang.String)[pri:2, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="createRequisition" duration-ms="11005" started-at="2020-10-01T11:24:37Z" description="Create Requisition" data-provider="TestDataProvider" finished-at="2020-10-01T11:24:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cust655]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login To the App]]>
+            </line>
+            <line>
+              <![CDATA[Enter the value into User Name Text Box]]>
+            </line>
+            <line>
+              <![CDATA[Enter the value into Password Text Box]]>
+            </line>
+            <line>
+              <![CDATA[Verify Sign In Button is Clickable or Not]]>
+            </line>
+            <line>
+              <![CDATA[Verify Reports Tab is Clickable or Not]]>
+            </line>
+            <line>
+              <![CDATA[Verify Task Tab is Clickable or Not]]>
+            </line>
+            <line>
+              <![CDATA[Verify Create New Customer Button is Clickable or Not]]>
+            </line>
+            <line>
+              <![CDATA[Enter the value into Customer Name Text Box]]>
+            </line>
+            <line>
+              <![CDATA[-------------Scrolling till the Element------------]]>
+            </line>
+            <line>
+              <![CDATA[Verify Create Customer Button is Clickable or Not]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createRequisition -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="closeBrowser" is-config="true" duration-ms="3406" started-at="2020-10-01T11:24:48Z" finished-at="2020-10-01T11:24:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="killTask(java.lang.String)[pri:0, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="killTask" is-config="true" duration-ms="71" started-at="2020-10-01T11:24:53Z" finished-at="2020-10-01T11:24:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killTask -->
+      </class> <!-- com.tyss.acttime.scripts.CreateRequisition -->
+    </test> <!-- POC_Test1 -->
+  </suite> <!-- Actitime -->
+</testng-results>

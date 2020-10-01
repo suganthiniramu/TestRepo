@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="main.util.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="2" name="Test(failed)" parallel="tests">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="test.smartrecruit.createrequisition.CreateRequisition">
+        <methods>
+          <include name="launchApp"/>
+          <include name="createRequisition" invocation-numbers="0 1 2"/>
+          <include name="createFiles"/>
+          <include name="killTask"/>
+          <include name="signoutAndcloseApp"/>
+        </methods>
+      </class> <!-- test.smartrecruit.createrequisition.CreateRequisition -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
