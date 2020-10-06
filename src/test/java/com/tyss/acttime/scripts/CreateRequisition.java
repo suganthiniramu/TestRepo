@@ -1,5 +1,7 @@
 package com.tyss.acttime.scripts;
 
+import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.RandomUtils;
 import org.testng.annotations.Test;
 
 import com.tyss.actitime.pages.Task_Page;
@@ -34,7 +36,7 @@ public class CreateRequisition extends BaseTest{
 		 taskpage.clkCreateNewCustomerButton();
 			
 			/*Set Customer Name*/
-		 taskpage.setCustomerName(customername);
+		 taskpage.setCustomerName(customername+RandomStringUtils.randomAlphabetic(2));
 		 
 		 /*Set Customer Checkbox*/
         taskpage.clkAddMoreCustomersCheckBox();

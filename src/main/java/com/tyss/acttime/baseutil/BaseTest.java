@@ -60,6 +60,7 @@ public class BaseTest {
 	public DesiredCapabilities cap;
 	public static final String LOCAL_HUB_URL = "http://localhost:4444/wd/hub";
 	public static final String CONFIGPATH = sDirPath + "./conf/config.properties";
+	public static final String MESSAGESPATH=sDirPath + "./src/main/resources/data/messages.properties";
 	public ChromeOptions chromeOpt;
 	public FirefoxOptions  firefoxOptions;
 	
@@ -70,6 +71,9 @@ public class BaseTest {
 			prop = new Properties();
 			FileInputStream fis = new FileInputStream(CONFIGPATH);
 			prop.load(fis);
+			FileInputStream fis1 = new FileInputStream(MESSAGESPATH);
+			prop.load(fis1);
+			
 
 		} catch (Exception e) {
 			e.printStackTrace();

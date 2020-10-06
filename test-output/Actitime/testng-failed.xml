@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Actitime]" parallel="tests">
+<suite thread-count="2" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Actitime]">
   <listeners>
     <listener class-name="com.tyss.acttime.listeners.TestListener"/>
   </listeners>
-  <test thread-count="2" name="POC_Test2(failed)" parallel="tests">
-    <parameter name="browserName" value="firefox"/>
+  <test thread-count="2" name="POC_Test1(failed)">
+    <parameter name="browserName" value="edge"/>
     <classes>
       <class name="com.tyss.acttime.scripts.CreateRequisition">
         <methods>
@@ -18,5 +18,5 @@
         </methods>
       </class> <!-- com.tyss.acttime.scripts.CreateRequisition -->
     </classes>
-  </test> <!-- POC_Test2(failed) -->
+  </test> <!-- POC_Test1(failed) -->
 </suite> <!-- Failed suite [Actitime] -->

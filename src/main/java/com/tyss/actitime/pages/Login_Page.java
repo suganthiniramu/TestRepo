@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import com.tyss.acttime.baseutil.BaseTest;
 import com.tyss.acttime.util.WebActionUtil;
 
 public class Login_Page {
@@ -34,6 +35,11 @@ public class Login_Page {
 	/* Password Text Box */
 	@FindBy(name = "pwd")
 	private WebElement txtPassword;
+	
+	/* Login Error Message*/
+	
+     @FindBy(xpath = "(//span[@class='errormsg'])[1]")
+	 private WebElement txtErrorMessage;
 
 	public synchronized void loginToApplication(String username, String password) {
 		try {
@@ -42,8 +48,17 @@ public class Login_Page {
 			WebActionUtil.typeText(txtPassword, password, "Password Text Box");
 			WebActionUtil.waitForElement(btnSignIn, " Dash Board Sign In Button", 20);
 			WebActionUtil.clickOnWebElement(btnSignIn, "Sign In Button", "Unable To Click On Sign in Button");
+			
+			if (WebActionUtil.isElementVisible(txtErrorMessage, "Error message")==false) {
+				WebActionUtil.info("Succesfully Logged In");
+			} else {
+				String errormsg=BaseTest.prop.getProperty("001");
+				WebActionUtil.verifytext(errormsg, txtErrorMessage, "Error Message");
+				Assert.fail();
+			}
 
 		} catch (Exception e) {
+		
 			WebActionUtil.error(e.getMessage());
 			WebActionUtil.error("-Unable to sign in the Application");
 			Assert.fail("Unable to signIn in the Login Page");

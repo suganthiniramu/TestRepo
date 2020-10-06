@@ -345,5 +345,45 @@ public class WebActionUtil {
 	            fail("Unable to load the page correctly");
 	        }
 	    }
+	 
+	 /**
+		 * Description Verifies  the Text
+		 * 
+		 * @author Aatish Slathia
+		 * @param expected
+		 * @param element
+		 * @param elementname
+		 */
+		public synchronized void verifytext(String expected, WebElement element, String elementname) {
+			try {
+				info("Getting text from " + elementname);
+				String actual = element.getText();
+				Assert.assertEquals(actual, expected);
+			} catch (Exception e) {
+				fail("Failed to fetch the text from " + elementname);
+			}
+
+		}
+		
+
+		/**
+		 * Description :Checks whether an element is visible
+		 * 
+		 * @author Aatish Slathia
+		 * @param element
+		 * @param elementName
+		 * 
+		 */
+		public synchronized boolean isElementVisible(WebElement element, String elemantName) {
+
+			try {
+				wait.until(ExpectedConditions.visibilityOf(element));
+			pass(elemantName + " is Visible ");
+				return true;
+			} catch (Exception e) {
+				return false;
+			}
+		}
+
 	}
 
