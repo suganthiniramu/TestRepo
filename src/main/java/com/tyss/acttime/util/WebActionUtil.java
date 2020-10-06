@@ -13,6 +13,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -322,4 +323,27 @@ public class WebActionUtil {
 	  	   return b.toString();
 	}
 	
-}
+	/**
+	 * @author Aatish Slathia
+	 * @description Wait for the angular page to load
+	 * @param element elementName
+	 */
+	 public void waitForAngularPageLoad() {
+	        try {
+	            ExpectedCondition<Boolean> pageLoadCondition = new ExpectedCondition<Boolean>() {
+	                @Override
+	                public Boolean apply(WebDriver driver) {
+	                    return Boolean.valueOf(((JavascriptExecutor) driver).executeScript(
+	                            "return (window.angular !== undefined) "
+	                                    + "&& (angular.element(document).injector() !== undefined) "
+	                                    + "&& (angular.element(document).injector().get('$http').pendingRequests.length === 0)").toString());
+	                }
+	            };
+	            WebDriverWait wait = new WebDriverWait(driver, 30);
+	            wait.until(pageLoadCondition);
+	        } catch (Exception e) {
+	            fail("Unable to load the page correctly");
+	        }
+	    }
+	}
+
