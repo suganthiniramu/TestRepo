@@ -51,17 +51,18 @@ public class WebActionUtil {
 
 	
 	/**
-	 * @author Shreya Ugavekar
-	 * @description Method for the pass updation in extent Report,Log file,TestNG
+	 * 
+	 * Description Method for the pass updation in extent Report,Log file,TestNG
 	 *              Report
+	 * @author Shreya Ugavekar
 	 */
 
 	public static void pass(String message) {
 		ExtentHCLManager.getTestReport().pass(MarkupHelper.createLabel(message, ExtentColor.GREEN));
 	}
-	/**
+	/**Description Method to provide info in the log,extent reports,testNg reports
 	 * @author Shreya Ugavekar
-	 * @description Method to provide info in the log,extent reports,testNg reports
+	 * 
 	 */
 	public static void info(String message) {
 		Reporter.log(message, true);
@@ -71,9 +72,10 @@ public class WebActionUtil {
 	}
 
 	/**
-	 * @author Shreya Ugavekar
-	 * @description Method for the Warning updation in extent Report,Log file,TestNG
-	 *              Reprt
+	 * 
+	 * Description Method for the Warning updation in extent Report,Log file,TestNG
+	 *              Report
+	 *  @author Shreya Ugavekar
 	 */
 	
 	public void warn(String message) {
@@ -83,9 +85,11 @@ public class WebActionUtil {
 	}
 
 	/**
-	 * @author Shreya Ugavekar
-	 * @description Method for the error/Failure updation in extent Report,Log
-	 *              file,TestNG Reprt
+	 * 
+	 * Description Method for the error/Failure updation in extent Report,Log
+	 *              file,TestNG Report
+	 *  @author Shreya Ugavekar
+	 *              
 	 */
 
 	public static void fail(String message) {
@@ -98,13 +102,25 @@ public class WebActionUtil {
 		BaseTest.logger.error(message);
 		Reporter.log(message, true);
 		ExtentHCLManager.getTestReport().error(message);
-	}
+	}/**
+	 * 
+	 * Description Method for fetching of get Current Date Time
+	 *  @author Shreya Ugavekar
+	 *              
+	 */
+
 	public static String getCurrentDateTime() {
 		DateFormat customFormat = new SimpleDateFormat("MM_dd_yyyy_HH_mm_ss");
 		Date currentDate = new Date();
 		return customFormat.format(currentDate);
 	}
-	
+	/**
+	 * 
+	 * Description Method clicks on web element
+	 *  @author Shreya Ugavekar
+	 *              
+	 */
+
 	public synchronized void clickOnWebElement(WebElement element, String elementName,String message) {
 	
 		
@@ -123,8 +139,9 @@ public class WebActionUtil {
 	}
 
 	/**
+	 * 
+	 * Description Check whether the Element is displayed with expected conditions
 	 * @author Shreya Ugavekar
-	 * @description Check whether the Element is displayed with expected conditions
 	 * @param element elementName
 	 */
 	public synchronized boolean isElementClickable(WebElement element, String elementName) {
@@ -171,8 +188,8 @@ public class WebActionUtil {
 			folderToDelete.delete();
 		}
 	/**
+	 * Description Capture the screenshot of the complete screen 
 	 * @author Shreya Ugavekar
-	 * @description Capture the screenshot of the complete screen 
 	 * @param path driver
 	 */
 	public static String getScreenShot(String path) {
@@ -190,8 +207,8 @@ public class WebActionUtil {
 	}
 	
 	/**
-	 * @author Shreya Ugavekar
-	 * @description To Enter the Text to the Text filed 
+	 * Description To Enter the Text to the Text filed 
+	 * @author Shreya Ugavekar 
 	 * @param element value elementName
 	 */
 	public synchronized void typeText(WebElement element, String value, String elementName) {
@@ -209,8 +226,8 @@ public class WebActionUtil {
 	}
 	
 	/**
+	 * Description To Select the value by the Visible Text
 	 * @author Shreya Ugavekar
-	 * @description To Select the value by the Visible Text
 	 * @param element value elementName
 	 */
 	public synchronized void selectByText(WebElement element, String value) {
@@ -226,8 +243,8 @@ public class WebActionUtil {
 
 	}
 	/**
+	 * Description Click on the check box
 	 * @author Shreya Ugavekar
-	 * @description Click on the check box
 	 * @param element  elementName
 	 */
 	public void clickCheckBox(WebElement element, String elementname) {
@@ -256,8 +273,8 @@ public class WebActionUtil {
 
 	}
 	/**
+	 * Description Click on the Element using JavaSCript 
 	 * @author Shreya Ugavekar
-	 * @description Click on the Element using JavaSCript 
 	 * @param element  elementName
 	 */
 	public void clickOnElementUsingJS(WebElement element, String elementName) {
@@ -272,8 +289,8 @@ public class WebActionUtil {
 		}
 	}
 	/**
+	 * Description Double Click On Element
 	 * @author Shreya Ugavekar
-	 * @description Double Click On Element
 	 * @param element  elementName
 	 */
 	public void doubleClickOnElement(WebElement element, String elementName) {
@@ -288,8 +305,8 @@ public class WebActionUtil {
 	
 
 	/**
+	 * Description Clear the Text
 	 * @author Shreya Ugavekar
-	 * @description Clear the Text
 	 * @param element elementName
 	 */
 	public void clearText(WebElement element, String elementName) {
@@ -302,8 +319,8 @@ public class WebActionUtil {
 		}
 	}
 	/**
-	 * @author Aatish Slathia
-	 * @description To create the duration of the Test Run
+	 * Description To create the duration of the Test Run
+	 * @author Aatish Slathia 
 	 * @param element elementName
 	 */
 	public static String formatDuration(final long millis) {
@@ -324,8 +341,8 @@ public class WebActionUtil {
 	}
 	
 	/**
+	 * Description Wait for the angular page to load
 	 * @author Aatish Slathia
-	 * @description Wait for the angular page to load
 	 * @param element elementName
 	 */
 	 public void waitForAngularPageLoad() {

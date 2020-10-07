@@ -9,12 +9,13 @@ import org.openqa.selenium.support.PageFactory;
 import com.tyss.acttime.util.WebActionUtil;
 import com.tyss.acttime.util.commonutils.ExcelUtil;
 
+/**
+ * Description This class has the implementations of the Task related methods
+ * @author shreya.u@testyantra.com
+ */
 public class Task_Page  {
 
 
-	/**
-	 * @author shreya.u@testyantra.com
-	 */
 	public WebDriver driver;
 	public WebActionUtil WebActionUtil;
 	public long ETO = 10;
@@ -77,26 +78,33 @@ public class Task_Page  {
 
 	
 	/**
+	 * Description  Method clicks on Task Tab
 	 * @author Shreya Ugavekar
-	 * @description Method to click on Task Tab
+	 * 
 	 */
 	public synchronized void clkTaskTab() {
-		WebActionUtil.waitForElement(tabTasks, "Reports Tab", 45);
-		WebActionUtil.clickOnElementUsingJS(tabTasks, "Reports Tab");
+		WebActionUtil.waitForElement(tabTasks, "Task  Tab", 45);
+		WebActionUtil.clickOnElementUsingJS(tabTasks, "Task Tab");
 	
 
 	}
 	
 	
 	/**
+	 * Description Method clicks on Reports Tab
 	 * @author Shreya Ugavekar
-	 * @description Method to click on Task Tab
+	 * 
 	 */
 	public synchronized void clkReportsTab() {
 		WebActionUtil.waitForElement(reportsTab, "Task Tab", 45);
 		WebActionUtil.clickOnWebElement(reportsTab, "Task Tab", "Unable to Click on Task Tab");
 
 	}
+	/**
+	 * Description Method  clicks  on Projects And Customers Tab
+	 * @author Shreya Ugavekar
+	 * 
+	 */
 	public synchronized void clkProjectsAndCustomersTab() {
 		WebActionUtil.waitForElement(tabProjectsandCustomers, "Projects And CustomersTab", 20);
 		WebActionUtil.clickOnWebElement(tabProjectsandCustomers, "Task Tab", "Unable to Click on Projects and Customers Tab");
@@ -104,8 +112,9 @@ public class Task_Page  {
 	}
 
 	/**
+	 * Description Method clicks on Create New Customer
 	 * @author Shreya Ugavekar
-	 * @description Method to click on Create New Customer
+	 * 
 	 */
 	public synchronized void clkCreateNewCustomerButton() {
 		WebActionUtil.waitForElement(btnCreateNewCustomer, "Create New Customer Button", 5);
@@ -115,8 +124,9 @@ public class Task_Page  {
 	}
 
 	/**
+	 * Description  Method to enter Customer Name
 	 * @author Shreya Ugavekar
-	 * @description Method to enter Customer Name
+	 * 
 	 */
 	public synchronized void setCustomerName(String customerName) {
 		WebActionUtil.waitForElement(txtcustomerName, "Customer Name Text Box", 25);
@@ -125,8 +135,9 @@ public class Task_Page  {
 	}
 
 	/**
+	 * Description  Method to Click Add More Customers Check Box
 	 * @author Shreya Ugavekar
-	 * @description Method to Click Add More Customers Check Box
+	 * 
 	 */
 	public synchronized void clkAddMoreCustomersCheckBox() {
 		WebActionUtil.scrollToElement(cbAddMoreCustomers, "Add More Customers CheckBox");
@@ -135,9 +146,9 @@ public class Task_Page  {
 
 	}
 	
-	/**
+	/** Description Method  clicks on Create New Project
 	 * @author Shreya Ugavekar
-	 * @description Method to click on Create New Project
+	 * 
 	 */
 	public synchronized void clkCreateNewProjectButton() {
 		WebActionUtil.waitForElement(btnCreateNewProject, "Create New Project Button", 5);
@@ -147,8 +158,9 @@ public class Task_Page  {
 	}
 	
 	/**
+	 * Description Method selects the Customer Name from Drop down 
 	 * @author Shreya Ugavekar
-	 * @description Method to Select the Customer Name from Drop down 
+	 * 
 	 */
 	public synchronized void selectCustomerName(String CustomerName) {
 		WebActionUtil.waitForElement(ddcustomer, "Customer Drop down", 5);
@@ -158,8 +170,8 @@ public class Task_Page  {
 	
 
 	/**
+	 * Description Method enters Project Name
 	 * @author Shreya Ugavekar
-	 * @description Method to enter Project Name
 	 */
 	public synchronized void setProjectName(String projectName) {
 		WebActionUtil.waitForElement(txtProjectName, "Project Name Text Box", 5);
@@ -168,8 +180,9 @@ public class Task_Page  {
 	}
 	
 	/**
+	 * Description Method to Click add more project Check Box
 	 * @author Shreya Ugavekar
-	 * @description Method to Click add more project Check Box
+	 * 
 	 */
 	public synchronized void clkAddMoreProjectsCheckBox() {
 		WebActionUtil.waitForElement(cbAddMoreProjects, "Add More Projects Check Box", 5);
@@ -178,8 +191,9 @@ public class Task_Page  {
 	}
 	
 	/**
+	 * Description Method  clicks on Create Project Button
 	 * @author Shreya Ugavekar
-	 * @description Method to click on Create Project Button
+	 * 
 	 */
 	public synchronized void clkCreateProjectButton() {
 		WebActionUtil.waitForElement(btnCreateProject, "Create Project  Button", 5);
@@ -188,8 +202,9 @@ public class Task_Page  {
 
 	}
 	/**
+	 * Description Method to clicks on Create Customer Button
 	 * @author Shreya Ugavekar
-	 * @description Method to click on Create Customer Button
+	 *  
 	 */
 	public synchronized void clkCreateCustomerButton() {
 		WebActionUtil.waitForElement(btnCreateCustomer, "Create Customer  Button", 5);
@@ -198,8 +213,11 @@ public class Task_Page  {
 
 	}
 	/**
+	 * Description Method to create multiple customers
 	 * @author Shreya Ugavekar
-	 * @description Method to create multiple customers
+	 * @param path
+	 * @param sheet
+	 * @param columnName
 	 */
 	public void createCustomers(String path,String sheet,String columnName)
 	{
@@ -216,7 +234,14 @@ public class Task_Page  {
 		}
 		clkCreateCustomerButton();
 	}
-	
+	/**
+	 * Description Method to create Project
+	 * @author Shreya Ugavekar
+	 * @param path
+	 * @param sheet
+	 * @param columnName
+	 * 
+	 */
 	public void createProject(String path,String sheet,String columnName)
 	{
 		int rowcount=ExcelUtil.getRowCount(path, sheet);

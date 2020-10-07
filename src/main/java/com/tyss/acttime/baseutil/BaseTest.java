@@ -110,27 +110,6 @@ public class BaseTest {
 
 		ExtentHCLManager.setParentReport(parentExtentTest);
 		
-	
-		/*
-		 * if (browserName.equalsIgnoreCase("firefox")) { cap =
-		 * DesiredCapabilities.firefox(); cap.setBrowserName("firefox");
-		 * 
-		 * } else if (browserName.equalsIgnoreCase("MicrosoftEdge")) { cap =
-		 * DesiredCapabilities.edge(); cap.setBrowserName(BrowserType.EDGE);
-		 * cap.setPlatform(Platform.WIN10);
-		 * 
-		 * } else if(browserName.equalsIgnoreCase("chrome")) { cap =
-		 * DesiredCapabilities.chrome(); cap.setBrowserName("chrome"); }
-		 */
-		
-//	try {
-//		cap=CreateDriver.getInstance().setWebDriverCapabilities(browserName, cap);
-//	} catch (IOException e1) {
-//		// TODO Auto-generated catch block
-//		e1.printStackTrace();
-//	}
-//		
-		
 			 try {
 				driver =CreateDriver.getInstance().setWebDriver(browserName, cap,LOCAL_HUB_URL ,chromeOpt,firefoxOptions);
 			} catch (IOException e) {

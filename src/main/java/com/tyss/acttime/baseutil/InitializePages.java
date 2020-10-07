@@ -8,8 +8,9 @@ import com.tyss.acttime.util.WebActionUtil;
 
 
 /**
+ * Description    Initialize all pages with driver,ETO, WebAactionUtil
  * @author         shreya.u@testyantra.com,vivek.d@testyantra.com,aatish.s@testyantra.com
- * @description    Initialize all pages with driver,ETO, WebAactionUtil
+ * 
  */
 
 public class InitializePages {
@@ -18,7 +19,7 @@ public class InitializePages {
 	public InitializePages(WebDriver driver,long ETO,WebActionUtil WebActionUtil) {
 			
 			loginPage = new Login_Page(driver, ETO, WebActionUtil);
-			//taskPage=new Task_Page(driver, ETO, WebActionUtil);
+			taskPage=new Task_Page(driver, ETO, WebActionUtil);
 	}
 
 }

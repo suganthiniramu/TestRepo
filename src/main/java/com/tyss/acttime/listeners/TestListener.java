@@ -32,7 +32,14 @@ import com.tyss.acttime.baseutil.BaseTest;
 import com.tyss.acttime.reports.ExtentHCLManager;
 import com.tyss.acttime.reports.ExtentHCLTest;
 import com.tyss.acttime.util.WebActionUtil;
-
+/**
+ * Description: This class implements ITestListener and overrides methods like
+ * onFinish, onTestFailure,onTestSkipped,onTestSuccess which are used in Extent
+ * report and Emailable report.
+ * 
+ * @author Shreya U,Aatish S
+ * 
+ */
 public class TestListener implements ITestListener {
 
 	String className;
@@ -65,7 +72,13 @@ public class TestListener implements ITestListener {
 	static Map<String, String> reportMailBody = new HashMap<String, String>();
 	File pdfReports = new File(PDFREPORTPATH);
 	
-	
+	/**
+	 * Description :Flushes the Extent report and sends an email of the report.
+	 * 
+	 * @author Aatish Slathia,shreya Ugavekar
+	 * @paran context
+	 * 
+	 */
 	
 	public void onFinish(ITestContext context) {
 		
@@ -88,6 +101,14 @@ public class TestListener implements ITestListener {
 
 	}
 
+	/**
+	 * Description :Increases the fail count and add fail result in Extent
+	 * report,adds screenshots to the  Extent report on Test case failure.
+	 * 
+	 * @author Aatish Slathia,shreya Ugavekar
+	 * @param result
+	 * 
+	 */
 	public void onTestFailure(ITestResult result) {
 		
 		iFailCount =iFailCount+1;
@@ -101,7 +122,13 @@ public class TestListener implements ITestListener {
 		}
 
 	}
-
+	/**
+	 * Description :Increases the skip count and adds the skip result in Extent report.
+	 * 
+	 * @author Aatish Slathia,shreya Ugavekar
+	 * @param result
+	 * 
+	 */
 	public void onTestSkipped(ITestResult result) {
 		iSkippedCount = iSkippedCount + 1;
 		ExtentHCLManager.getTestReport().log(Status.SKIP, result.getMethod().getMethodName() + "-Test case Skipped");
@@ -111,7 +138,13 @@ public class TestListener implements ITestListener {
 	public void onTestStart(ITestResult result) {
 
 	}
-
+	/**
+	 * Description:Increases the pass count and adds the pass result in Extent report
+	 * 
+	 * @author Aatish Slathia,shreya Ugavekar
+	 * @param result
+	 * 
+	 */
 	public void onTestSuccess(ITestResult result) {
 		iPassCount = iPassCount + 1;
 		ExtentHCLManager.getTestReport().log(Status.PASS, result.getMethod().getMethodName() + "-Test case passed");

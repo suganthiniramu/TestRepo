@@ -27,7 +27,7 @@ public class CreateDriver {
 			 new ThreadLocal<WebDriver>();
 	
 
-	// constructor
+	/*constructor*/
 	 private CreateDriver() {
 	 }
 	 
@@ -89,14 +89,24 @@ public class CreateDriver {
 		    
 		    return capabilities;
 	  }
-	  
+		/**
+		 * Description :Sets the web driver according to the 
+		 * 
+		 * @author Aatish Slathia ,Shreya, Vivek
+		 * @param browser
+		 * @param capabilities
+		 * @param LOCAL_HUB_URL
+		 * @param chromeOptions
+		 * @param firefoxOptions
+		 * 
+		 */
 	  public WebDriver setWebDriver(String browser , DesiredCapabilities capabilities,String LOCAL_HUB_URL, ChromeOptions chromeOptions,FirefoxOptions firefoxOptions ) throws IOException {
 
 		    switch (browser) {
-		        case "ie":
+		        case "Ie":
 		            capabilities = new DesiredCapabilities().internetExplorer();
 		            break;
-		        case "firefox":
+		        case "Firefox":
 		        	firefoxOptions=new  FirefoxOptions();
 		        	firefoxOptions.setHeadless(true);
 		        	ProfilesIni profile = new ProfilesIni();
@@ -109,7 +119,7 @@ public class CreateDriver {
 		            capabilities.setCapability(firefoxOptions.FIREFOX_OPTIONS, firefoxOptions);
 		            firefoxOptions.merge(capabilities);
 		            break;
-		        case "chrome":
+		        case "Chrome":
 		        	chromeOptions = new ChromeOptions(); 
 		        	//chromeOptions.addArguments("--headless");
 		        	chromeOptions.addArguments("--disable-popup-blocking");
@@ -119,13 +129,13 @@ public class CreateDriver {
 		        	capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 		        	chromeOptions.merge(capabilities);
 		            break;
-		        case "edge":
+		        case "Edge":
 		        	EdgeOptions edgeoptions=new EdgeOptions();
 		            capabilities = new DesiredCapabilities();
 		            capabilities.setBrowserName(BrowserType.EDGE);
 		            capabilities.setPlatform(Platform.WINDOWS);
 		            break;
-		        case "safari":
+		        case "Safari":
 		            capabilities = new DesiredCapabilities().safari();
 		            break;
 		        default:

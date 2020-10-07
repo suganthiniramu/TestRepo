@@ -7,10 +7,17 @@ import java.util.Date;
 import com.tyss.acttime.baseutil.BaseTest;
 import com.tyss.acttime.reports.ExtentHCLTest;
 import com.tyss.acttime.util.WebActionUtil;
-
+/**
+ * Description : Implements creation of the folder structure for Extent reports,screenshots,deletion of the previously created folder.
+ * @author: Shreya U,Vivek Dogra
+ */
 public class FileOperation {
 	FileVariables fileVariables = new FileVariables();
-
+	   
+		/**
+		 * Description:Implements setting of the path,creation of the folder structure for Extent reports,screenshot,deletion of the folder.
+		 * @author: Shreya U,Vivek Dogra
+		 */
 	public void CreateFiles() {
 
 		fileVariables.setDate(new Date());

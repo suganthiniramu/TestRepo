@@ -8,11 +8,12 @@ import org.testng.Assert;
 
 import com.tyss.acttime.baseutil.BaseTest;
 import com.tyss.acttime.util.WebActionUtil;
-
+/**
+ * Description This class has the implementations of the Login 
+ * @author shreya.u@testyantra.com
+ */
 public class Login_Page {
-	/**
-	 * @author shreya.u@testyantra.com
-	 */
+	
 	public WebDriver driver;
 	public WebActionUtil WebActionUtil;
 	public long ETO = 10;
@@ -37,10 +38,17 @@ public class Login_Page {
 	private WebElement txtPassword;
 	
 	/* Login Error Message*/
-	
      @FindBy(xpath = "(//span[@class='errormsg'])[1]")
 	 private WebElement txtErrorMessage;
-
+     
+     
+ 	/**
+ 	 * Description Method to Login to the application
+ 	 * @author Shreya Ugavekar
+ 	 * @param username
+ 	 * @param password
+ 	 * 
+ 	 */
 	public synchronized void loginToApplication(String username, String password) {
 		try {
 			WebActionUtil.info("Login To the App");
