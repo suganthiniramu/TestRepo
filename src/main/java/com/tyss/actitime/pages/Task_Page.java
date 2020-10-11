@@ -47,6 +47,7 @@ public class Task_Page  {
 	@FindBy(id = "add_more_customers_action")
 	private WebElement cbAddMoreCustomers;
 	
+	
 	/* Create New Project Button */
 	@FindBy(xpath = "//input[@value='Create New Project']")
 	private WebElement btnCreateNewProject;

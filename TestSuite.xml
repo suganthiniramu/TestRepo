@@ -7,7 +7,7 @@
   <test thread-count="1" name="POC_Test1">
     <parameter name="browserName" value="Chrome"/>
     <classes>
-      <class name="com.tyss.acttime.scripts.CreateRequisition"/>
+      <class name="com.tyss.acttime.scripts.CreateTask"/>
     </classes>
   </test> <!-- POC_Test1 -->
 </suite> <!-- Actitime -->

@@ -4,7 +4,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
+import java.util.Set;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
@@ -133,9 +137,6 @@ public class WebActionUtil {
 				Assert.assertTrue(wait.until(ExpectedConditions.elementToBeClickable(element))==null);
 		} 
 		
-		 
-
-		
 	}
 
 	/**
@@ -239,6 +240,37 @@ public class WebActionUtil {
 		} catch (Exception e) {
 			fail(" User is not able to Select" + value );
 			Assert.fail("Unable to select  " + value);
+		}
+
+	}
+	public synchronized void switchWindowControl()
+	{
+		// It will return the parent window name as a String
+	String mainWindow=driver.getWindowHandle();
+	// It returns no. of windows opened by WebDriver and will return Set of Strings
+	Set<String> set =driver.getWindowHandles();
+	// Using Iterator to iterate with in windows
+	Iterator<String> itr= set.iterator();
+	while(itr.hasNext()){
+		String childWindow=itr.next();
+	}
+	   	// Compare whether the main windows is not equal to child window. If not equal, we will clo
+	}
+	/*
+	 * Description Switches to tab
+	 * 
+	 * @author Aatish Slathia
+	 * @param tabindex
+	 * 
+	 */
+	public synchronized void switchToTab(int tabindex) {
+		try {
+			ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+			driver.switchTo().window(tabs.get(tabindex));
+			pass("Switch to tab complete");
+		} catch (Exception e) {
+			fail("Switching to tab failed ");
+
 		}
 
 	}

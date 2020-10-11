@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
   <reporter-output>
     <line>
       <![CDATA[Login To the App]]>
@@ -20,19 +20,13 @@
       <![CDATA[Verify Task Tab is Clickable or Not]]>
     </line>
     <line>
-      <![CDATA[Verify Task Tab is Clickable or Not]]>
+      <![CDATA[Verify Create Task Tab is Clickable or Not]]>
     </line>
     <line>
-      <![CDATA[Verify Create New Customer Button is Clickable or Not]]>
+      <![CDATA[Select the value Maruti]]>
     </line>
     <line>
-      <![CDATA[Enter the value into Customer Name Text Box]]>
-    </line>
-    <line>
-      <![CDATA[-------------Scrolling till the Element------------]]>
-    </line>
-    <line>
-      <![CDATA[Verify Create Customer Button is Clickable or Not]]>
+      <![CDATA[ User is not able to SelectMaruti]]>
     </line>
     <line>
       <![CDATA[Login To the App]]>
@@ -41,31 +35,7 @@
       <![CDATA[Enter the value into User Name Text Box]]>
     </line>
     <line>
-      <![CDATA[Enter the value into Password Text Box]]>
-    </line>
-    <line>
-      <![CDATA[Verify Sign In Button is Clickable or Not]]>
-    </line>
-    <line>
-      <![CDATA[Succesfully Logged In]]>
-    </line>
-    <line>
-      <![CDATA[Verify Task Tab is Clickable or Not]]>
-    </line>
-    <line>
-      <![CDATA[Verify Task Tab is Clickable or Not]]>
-    </line>
-    <line>
-      <![CDATA[Verify Create New Customer Button is Clickable or Not]]>
-    </line>
-    <line>
-      <![CDATA[Enter the value into Customer Name Text Box]]>
-    </line>
-    <line>
-      <![CDATA[-------------Scrolling till the Element------------]]>
-    </line>
-    <line>
-      <![CDATA[Verify Create Customer Button is Clickable or Not]]>
+      <![CDATA[ User is not able to type admininto User Name Text Box]]>
     </line>
     <line>
       <![CDATA[Login To the App]]>
@@ -74,43 +44,19 @@
       <![CDATA[Enter the value into User Name Text Box]]>
     </line>
     <line>
-      <![CDATA[Enter the value into Password Text Box]]>
-    </line>
-    <line>
-      <![CDATA[Verify Sign In Button is Clickable or Not]]>
-    </line>
-    <line>
-      <![CDATA[Succesfully Logged In]]>
-    </line>
-    <line>
-      <![CDATA[Verify Task Tab is Clickable or Not]]>
-    </line>
-    <line>
-      <![CDATA[Verify Task Tab is Clickable or Not]]>
-    </line>
-    <line>
-      <![CDATA[Verify Create New Customer Button is Clickable or Not]]>
-    </line>
-    <line>
-      <![CDATA[Enter the value into Customer Name Text Box]]>
-    </line>
-    <line>
-      <![CDATA[-------------Scrolling till the Element------------]]>
-    </line>
-    <line>
-      <![CDATA[Verify Create Customer Button is Clickable or Not]]>
+      <![CDATA[ User is not able to type admininto User Name Text Box]]>
     </line>
   </reporter-output>
-  <suite name="Actitime" duration-ms="115495" started-at="2020-10-07T06:05:46Z" finished-at="2020-10-07T06:07:41Z">
+  <suite name="Actitime" duration-ms="134711" started-at="2020-10-09T04:17:31Z" finished-at="2020-10-09T04:19:46Z">
     <groups>
     </groups>
-    <test name="POC_Test1" duration-ms="115495" started-at="2020-10-07T06:05:46Z" finished-at="2020-10-07T06:07:41Z">
-      <class name="com.tyss.acttime.scripts.CreateRequisition">
-        <test-method status="PASS" signature="createFiles()[pri:0, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="createFiles" is-config="true" duration-ms="666" started-at="2020-10-07T06:05:45Z" finished-at="2020-10-07T06:05:46Z">
+    <test name="POC_Test1" duration-ms="134711" started-at="2020-10-09T04:17:31Z" finished-at="2020-10-09T04:19:46Z">
+      <class name="com.tyss.acttime.scripts.CreateTask">
+        <test-method status="PASS" signature="createFiles()[pri:0, instance:com.tyss.acttime.scripts.CreateTask@41c2284a]" name="createFiles" is-config="true" duration-ms="1314" started-at="2020-10-09T04:17:30Z" finished-at="2020-10-09T04:17:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createFiles -->
-        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="launchApp" is-config="true" duration-ms="12225" started-at="2020-10-07T06:05:46Z" finished-at="2020-10-07T06:05:58Z">
+        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:com.tyss.acttime.scripts.CreateTask@41c2284a]" name="launchApp" is-config="true" duration-ms="55211" started-at="2020-10-09T04:17:31Z" finished-at="2020-10-09T04:18:26Z">
           <params>
             <param index="0">
               <value>
@@ -121,25 +67,73 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="setExtentReport(java.lang.reflect.Method)[pri:0, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="setExtentReport" is-config="true" duration-ms="19" started-at="2020-10-07T06:06:00Z" finished-at="2020-10-07T06:06:00Z">
+        <test-method status="PASS" signature="setExtentReport(java.lang.reflect.Method)[pri:0, instance:com.tyss.acttime.scripts.CreateTask@41c2284a]" name="setExtentReport" is-config="true" duration-ms="4" started-at="2020-10-09T04:18:31Z" finished-at="2020-10-09T04:18:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.tyss.acttime.scripts.CreateRequisition.createRequisition(java.lang.String) throws java.lang.Exception]]>
+                <![CDATA[public void com.tyss.acttime.scripts.CreateTask.createTask(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtentReport -->
-        <test-method status="PASS" signature="createRequisition(java.lang.String)[pri:2, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="createRequisition" duration-ms="28575" started-at="2020-10-07T06:06:00Z" description="Create Requisition" data-provider="TestDataProvider" finished-at="2020-10-07T06:06:29Z">
+        <test-method status="FAIL" signature="createTask(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tyss.acttime.scripts.CreateTask@41c2284a]" name="createTask" duration-ms="50821" started-at="2020-10-09T04:18:31Z" description="Create Task" data-provider="TestDataProviderForTasks" finished-at="2020-10-09T04:19:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Cust9088]]>
+                <![CDATA[Maruti]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Brezza]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Steering Rod]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Unable to select  Maruti]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Unable to select  Maruti
+at org.testng.Assert.fail(Assert.java:96)
+at com.tyss.acttime.util.WebActionUtil.selectByText(WebActionUtil.java:242)
+at com.tyss.actitime.pages.Create_Task_Page.selectCustomerName(Create_Task_Page.java:93)
+at com.tyss.acttime.scripts.CreateTask.createTask(CreateTask.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[Login To the App]]>
@@ -160,41 +154,83 @@
               <![CDATA[Verify Task Tab is Clickable or Not]]>
             </line>
             <line>
-              <![CDATA[Verify Task Tab is Clickable or Not]]>
+              <![CDATA[Verify Create Task Tab is Clickable or Not]]>
             </line>
             <line>
-              <![CDATA[Verify Create New Customer Button is Clickable or Not]]>
+              <![CDATA[Select the value Maruti]]>
             </line>
             <line>
-              <![CDATA[Enter the value into Customer Name Text Box]]>
-            </line>
-            <line>
-              <![CDATA[-------------Scrolling till the Element------------]]>
-            </line>
-            <line>
-              <![CDATA[Verify Create Customer Button is Clickable or Not]]>
+              <![CDATA[ User is not able to SelectMaruti]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createRequisition -->
-        <test-method status="PASS" signature="setExtentReport(java.lang.reflect.Method)[pri:0, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="setExtentReport" is-config="true" duration-ms="1" started-at="2020-10-07T06:06:29Z" finished-at="2020-10-07T06:06:29Z">
+        </test-method> <!-- createTask -->
+        <test-method status="PASS" signature="setExtentReport(java.lang.reflect.Method)[pri:0, instance:com.tyss.acttime.scripts.CreateTask@41c2284a]" name="setExtentReport" is-config="true" duration-ms="1" started-at="2020-10-09T04:19:24Z" finished-at="2020-10-09T04:19:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.tyss.acttime.scripts.CreateRequisition.createRequisition(java.lang.String) throws java.lang.Exception]]>
+                <![CDATA[public void com.tyss.acttime.scripts.CreateTask.createTask(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtentReport -->
-        <test-method status="PASS" signature="createRequisition(java.lang.String)[pri:2, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="createRequisition" duration-ms="28963" started-at="2020-10-07T06:06:29Z" description="Create Requisition" data-provider="TestDataProvider" finished-at="2020-10-07T06:06:58Z">
+        <test-method status="FAIL" signature="createTask(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tyss.acttime.scripts.CreateTask@41c2284a]" name="createTask" duration-ms="10372" started-at="2020-10-09T04:19:24Z" description="Create Task" data-provider="TestDataProviderForTasks" finished-at="2020-10-09T04:19:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Cust0865]]>
+                <![CDATA[Suzuki]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Access]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Fuel Gauge]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Unable to type in User Name Text Box]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Unable to type in User Name Text Box
+at org.testng.Assert.fail(Assert.java:96)
+at com.tyss.acttime.util.WebActionUtil.typeText(WebActionUtil.java:225)
+at com.tyss.actitime.pages.Login_Page.loginToApplication(Login_Page.java:55)
+at com.tyss.acttime.scripts.CreateTask.createTask(CreateTask.java:23)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[Login To the App]]>
@@ -203,53 +239,77 @@
               <![CDATA[Enter the value into User Name Text Box]]>
             </line>
             <line>
-              <![CDATA[Enter the value into Password Text Box]]>
-            </line>
-            <line>
-              <![CDATA[Verify Sign In Button is Clickable or Not]]>
-            </line>
-            <line>
-              <![CDATA[Succesfully Logged In]]>
-            </line>
-            <line>
-              <![CDATA[Verify Task Tab is Clickable or Not]]>
-            </line>
-            <line>
-              <![CDATA[Verify Task Tab is Clickable or Not]]>
-            </line>
-            <line>
-              <![CDATA[Verify Create New Customer Button is Clickable or Not]]>
-            </line>
-            <line>
-              <![CDATA[Enter the value into Customer Name Text Box]]>
-            </line>
-            <line>
-              <![CDATA[-------------Scrolling till the Element------------]]>
-            </line>
-            <line>
-              <![CDATA[Verify Create Customer Button is Clickable or Not]]>
+              <![CDATA[ User is not able to type admininto User Name Text Box]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createRequisition -->
-        <test-method status="PASS" signature="setExtentReport(java.lang.reflect.Method)[pri:0, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="setExtentReport" is-config="true" duration-ms="1" started-at="2020-10-07T06:06:58Z" finished-at="2020-10-07T06:06:58Z">
+        </test-method> <!-- createTask -->
+        <test-method status="PASS" signature="setExtentReport(java.lang.reflect.Method)[pri:0, instance:com.tyss.acttime.scripts.CreateTask@41c2284a]" name="setExtentReport" is-config="true" duration-ms="2" started-at="2020-10-09T04:19:35Z" finished-at="2020-10-09T04:19:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.tyss.acttime.scripts.CreateRequisition.createRequisition(java.lang.String) throws java.lang.Exception]]>
+                <![CDATA[public void com.tyss.acttime.scripts.CreateTask.createTask(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtentReport -->
-        <test-method status="PASS" signature="createRequisition(java.lang.String)[pri:2, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="createRequisition" duration-ms="34223" started-at="2020-10-07T06:06:58Z" description="Create Requisition" data-provider="TestDataProvider" finished-at="2020-10-07T06:07:32Z">
+        <test-method status="FAIL" signature="createTask(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tyss.acttime.scripts.CreateTask@41c2284a]" name="createTask" duration-ms="10106" started-at="2020-10-09T04:19:35Z" description="Create Task" data-provider="TestDataProviderForTasks" finished-at="2020-10-09T04:19:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Cust655]]>
+                <![CDATA[Toyota]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Innova]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Differentials]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Unable to type in User Name Text Box]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Unable to type in User Name Text Box
+at org.testng.Assert.fail(Assert.java:96)
+at com.tyss.acttime.util.WebActionUtil.typeText(WebActionUtil.java:225)
+at com.tyss.actitime.pages.Login_Page.loginToApplication(Login_Page.java:55)
+at com.tyss.acttime.scripts.CreateTask.createTask(CreateTask.java:23)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[Login To the App]]>
@@ -258,39 +318,15 @@
               <![CDATA[Enter the value into User Name Text Box]]>
             </line>
             <line>
-              <![CDATA[Enter the value into Password Text Box]]>
-            </line>
-            <line>
-              <![CDATA[Verify Sign In Button is Clickable or Not]]>
-            </line>
-            <line>
-              <![CDATA[Succesfully Logged In]]>
-            </line>
-            <line>
-              <![CDATA[Verify Task Tab is Clickable or Not]]>
-            </line>
-            <line>
-              <![CDATA[Verify Task Tab is Clickable or Not]]>
-            </line>
-            <line>
-              <![CDATA[Verify Create New Customer Button is Clickable or Not]]>
-            </line>
-            <line>
-              <![CDATA[Enter the value into Customer Name Text Box]]>
-            </line>
-            <line>
-              <![CDATA[-------------Scrolling till the Element------------]]>
-            </line>
-            <line>
-              <![CDATA[Verify Create Customer Button is Clickable or Not]]>
+              <![CDATA[ User is not able to type admininto User Name Text Box]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createRequisition -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="closeBrowser" is-config="true" duration-ms="8915" started-at="2020-10-07T06:07:32Z" finished-at="2020-10-07T06:07:41Z">
+        </test-method> <!-- createTask -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.tyss.acttime.scripts.CreateTask@41c2284a]" name="closeBrowser" is-config="true" duration-ms="190" started-at="2020-10-09T04:19:46Z" finished-at="2020-10-09T04:19:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="killTask(java.lang.String)[pri:0, instance:com.tyss.acttime.scripts.CreateRequisition@5f16132a]" name="killTask" is-config="true" duration-ms="184" started-at="2020-10-07T06:07:52Z" finished-at="2020-10-07T06:07:52Z">
+        <test-method status="PASS" signature="killTask(java.lang.String)[pri:0, instance:com.tyss.acttime.scripts.CreateTask@41c2284a]" name="killTask" is-config="true" duration-ms="424" started-at="2020-10-09T04:19:49Z" finished-at="2020-10-09T04:19:49Z">
           <params>
             <param index="0">
               <value>
@@ -301,7 +337,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killTask -->
-      </class> <!-- com.tyss.acttime.scripts.CreateRequisition -->
+      </class> <!-- com.tyss.acttime.scripts.CreateTask -->
     </test> <!-- POC_Test1 -->
   </suite> <!-- Actitime -->
 </testng-results>

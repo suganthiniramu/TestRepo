@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Actitime]">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Actitime]">
   <listeners>
     <listener class-name="com.tyss.acttime.listeners.TestListener"/>
   </listeners>
-  <test thread-count="2" name="POC_Test1(failed)">
-    <parameter name="browserName" value="edge"/>
+  <test thread-count="1" name="POC_Test1(failed)">
+    <parameter name="browserName" value="Chrome"/>
     <classes>
-      <class name="com.tyss.acttime.scripts.CreateRequisition">
+      <class name="com.tyss.acttime.scripts.CreateTask">
         <methods>
           <include name="killTask"/>
+          <include name="createTask" invocation-numbers="0 1 2"/>
           <include name="createFiles"/>
           <include name="setExtentReport"/>
           <include name="closeBrowser"/>
-          <include name="createRequisition" invocation-numbers="0 1 2"/>
           <include name="launchApp"/>
         </methods>
-      </class> <!-- com.tyss.acttime.scripts.CreateRequisition -->
+      </class> <!-- com.tyss.acttime.scripts.CreateTask -->
     </classes>
   </test> <!-- POC_Test1(failed) -->
 </suite> <!-- Failed suite [Actitime] -->
