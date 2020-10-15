@@ -104,19 +104,25 @@ public class Assignment1 {
 		
 		/* verify price */
 		String actPrice=driver.findElement(By.xpath("//span[@class='actual-price']")).getText();
+		actPrice=actPrice.substring(1);
+		System.out.println("Actual price total:"+actPrice);
 		Integer actAmount=Integer.parseInt(actPrice);
 		
-		 List<WebElement> total=driver.findElements(By.xpath("//div[@class='table-row']"));
-		 int expAmount=0;
-		 for(WebElement wb:total)
-		 		{
-					String s1=wb.getText();
-					Integer i=	Integer.parseInt(s1);
-					expAmount=expAmount + i;
-				}
-		
-			
-		if(actAmount.equals(expAmount))
+		// List<WebElement> total=driver.findElements(By.xpath("//div[@class='table-row']"));
+		 
+		 String bagPrice=driver.findElement(By.xpath("//div[text()='Bag Total']/parent::div//div[2]")).getText();
+		 bagPrice=bagPrice.substring(1);
+		 
+		 System.out.println("Bag Total:"+bagPrice);
+		 Integer bagTotal=Integer.parseInt(bagPrice);
+	
+		 String subTotalPrice=driver.findElement(By.xpath("//div[text()='Sub Total']/parent::div/div[2]")).getText();
+		 subTotalPrice=subTotalPrice.substring(1);
+		 System.out.println("Sub Total:"+subTotalPrice);
+		 Integer subTotal=Integer.parseInt(subTotalPrice);
+		 
+		 
+		 if(actAmount.equals(bagTotal))
 		{
 		System.out.println("The total amount is correct");
 		}
@@ -125,35 +131,35 @@ public class Assignment1 {
 			System.out.println("The total amount is not correct");
 		}
 		
-		//driver.close();			
-	}
-	public  void  navigateActions(WebElement element)
-	{
+		driver.close();			
+		}
+		public  void  navigateActions(WebElement element)
+		{
 		Actions act=new Actions(driver);
 		act.moveToElement(element).perform();	
-	}
-	public String getData(String sheetname) throws EncryptedDocumentException, IOException
-	{
+		}
+		public String getData(String sheetname) throws EncryptedDocumentException, IOException
+		{
 		String excelFilePath="./src/test/resources/nykaa.xlsx";
 		FileInputStream fis=new FileInputStream(excelFilePath);
 		Workbook book=WorkbookFactory.create(fis);
 		Sheet sh=book.getSheet(sheetname);
 		String value=sh.getRow(0).getCell(0).getStringCellValue();
 		return value;	
-	}
+		}
 	
-	public  void  navigatoNextTab(WebDriver driver)
-	{
+		public  void  navigatoNextTab(WebDriver driver)
+		{
 		String mainId=driver.getWindowHandle();
 		Set<String>allId=driver.getWindowHandles();
-		for(String Id:allId)
-		{
-			if(!Id.equals(mainId))
+			for(String Id:allId)
 			{
-			driver.switchTo().window(Id);
+				if(!Id.equals(mainId))
+				{
+					driver.switchTo().window(Id);
+				}
 			}
 		}
-	}
 	public void scrollDown()
 	{
 		JavascriptExecutor js=(JavascriptExecutor)driver;
