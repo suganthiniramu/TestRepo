@@ -7,7 +7,9 @@
   <test thread-count="1" name="POC_Test1">
     <parameter name="browserName" value="Chrome"/>
     <classes>
-      <class name="com.tyss.acttime.scripts.CreateTask"/>
+    <class name="com.tyss.acttime.scripts.OneWayBookTask"/>
+    <class name="com.tyss.acttime.scripts.ReturnTrip"/>
+      <class name="com.tyss.acttime.scripts.MulticityTrip"/>
     </classes>
   </test> <!-- POC_Test1 -->
 </suite> <!-- Actitime -->

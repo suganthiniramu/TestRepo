@@ -7,16 +7,36 @@
   <test thread-count="1" name="POC_Test1(failed)">
     <parameter name="browserName" value="Chrome"/>
     <classes>
-      <class name="com.tyss.acttime.scripts.CreateTask">
+      <class name="com.tyss.acttime.scripts.ReturnTrip">
         <methods>
           <include name="killTask"/>
-          <include name="createTask" invocation-numbers="0 1 2"/>
+          <include name="closeBrowser"/>
           <include name="createFiles"/>
           <include name="setExtentReport"/>
+          <include name="launchApp"/>
+          <include name="createReturnTrip" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.tyss.acttime.scripts.ReturnTrip -->
+      <class name="com.tyss.acttime.scripts.OneWayBookTask">
+        <methods>
+          <include name="killTask"/>
+          <include name="createOneWay" invocation-numbers="0"/>
           <include name="closeBrowser"/>
+          <include name="createFiles"/>
+          <include name="setExtentReport"/>
           <include name="launchApp"/>
         </methods>
-      </class> <!-- com.tyss.acttime.scripts.CreateTask -->
+      </class> <!-- com.tyss.acttime.scripts.OneWayBookTask -->
+      <class name="com.tyss.acttime.scripts.MulticityTrip">
+        <methods>
+          <include name="killTask"/>
+          <include name="createMulticityTrip" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="createFiles"/>
+          <include name="setExtentReport"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- com.tyss.acttime.scripts.MulticityTrip -->
     </classes>
   </test> <!-- POC_Test1(failed) -->
 </suite> <!-- Failed suite [Actitime] -->
